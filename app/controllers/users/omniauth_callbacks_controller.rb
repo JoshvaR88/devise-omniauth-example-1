@@ -4,6 +4,9 @@ module Users
     attr_reader :auth
     helper_method :auth
 
+    # Some of this logic coming from
+    # https://github.com/intridea/omniauth/wiki/Managing-Multiple-Providers
+    # https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview
     def callback
       auth = env["omniauth.auth"]
 
