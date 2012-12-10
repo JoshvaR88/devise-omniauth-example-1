@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>DeviseOmniauthExample</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -7,11 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <% if notice.present? %><p class="notice"><%= notice %></p><% end %>
+    <% if alert.present? %><p class="alert"><%= alert %></p><% end %>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-  <%= yield %>
+    <%= yield %>
+  </div>
 
 </body>
 </html>

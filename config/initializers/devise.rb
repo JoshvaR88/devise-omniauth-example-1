@@ -205,9 +205,11 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :twitter,   'APP_ID', 'APP_SECRET' # scope: "read, write" - is default
-  config.omniauth :linkedin,  'APP_ID', 'APP_SECRET' # scope: "r_basicprofile r_emailaddress" - is default
-  config.omniauth :facebook,  'APP_ID', 'APP_SECRET', scope: 'email, user_likes, publish_stream, offline_access'
+  config.omniauth :twitter,   'TPT9vS8NQqNFYDL7Qf6ug', 'YgoaOKbiyq6uMbDTIcbEbiYNRAnSXtSqVPwF7L057k' # scope: "read, write" - is default
+  config.omniauth :linkedin,  '301tzv2grgbj', 'qMGyWgIYpnJg5xLb' # scope: "r_basicprofile r_emailaddress" - is default
+  config.omniauth :facebook,  '108379095997939', 'c8036418fe593429d257fe8d4f9c6295',
+    scope: 'email, user_likes, publish_stream, offline_access',
+    client_options: {ssl: {ca_file: '/usr/lib/ssl/certs/ca-certificates.crt'}}
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

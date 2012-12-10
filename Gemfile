@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'sqlite3'
+gem 'thin'
 
 gem 'devise'
 gem 'omniauth'
@@ -10,6 +11,8 @@ gem 'omniauth-linkedin'
 gem 'omniauth-facebook'
 
 gem 'bootstrap-sass'
+
+gem 'pry'
 
 # Gems used only for assets and not required
 # in production environments by default.
